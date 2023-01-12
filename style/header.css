@@ -65,8 +65,11 @@
         display: flex;
     }
     .opcoes__item{
-        padding: 0 1em;
+        padding: 1em 2em;
+        margin: 0 5px;
         text-transform: uppercase;
+        border: solid 2px transparent;
+        transition: .3s ease-in-out;
     }
     .opcoes__link{
         text-decoration: none;
@@ -81,10 +84,21 @@
     .opcoes__botao:checked ~ .lista__menu{
         display: block;
         width: auto;
-        left: 38%;
+        left: 35%;
     }
     .opcoes__botao{
         display: none;
+    }
+    .opcoes__item:hover{
+        border: solid 2px var(--azul_cor);
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    .container__imagem{
+    transition: .2s ease-in-out;
+    }
+    .container__imagem:hover{
+        scale: 1.2;
     }
 }
 
