@@ -85,6 +85,22 @@
         width: 40%;
         margin: 2em auto;
     }
+    .botões__ancora{
+        border: solid 2px transparent;
+        transition: .2s ease-in-out;
+    }
+    .botões__ancora:hover{
+        color: var(--laranja);
+        background-color: var(--branco);
+        border: solid 2px var(--laranja);
+        border-radius: 15px;
+    }
+    .botões__item{
+        transition: .3s ease-in-out;
+    }
+    .botões__item:hover{
+        scale: 1.2;
+    }
 }
 @media screen and (min-width:1728px) {
     .carrossel__container {
